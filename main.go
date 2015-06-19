@@ -14,7 +14,7 @@ func meeting(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	coords := r.Form["coords"] // Array of lat lng
-	locType := r.FormValue("type")
+	//	locType := r.FormValue("type")
 	fmt.Println(coords)
 	//center := centerOfCoords(coords)
 	//toMeet = findMeetingPlaces(center, locType)
