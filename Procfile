@@ -1,1 +1,1 @@
-web: rendezvous-go
+web: main
