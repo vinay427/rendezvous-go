@@ -13,10 +13,11 @@ func meeting(w http.ResponseWriter, r *http.Request) {
 		http.StatusText(400)
 		return
 	}
-	loc := r.Form["loc"]
-	fmt.Println(loc)
-	//center := centerOfCoords(loc)
-	//toMeet = findMeetingPlaces(center)
+	coords := r.Form["coords"] // Array of lat lng
+	locType := r.FormValue("type")
+	fmt.Println(coords)
+	//center := centerOfCoords(coords)
+	//toMeet = findMeetingPlaces(center, locType)
 }
 
 func main() {
